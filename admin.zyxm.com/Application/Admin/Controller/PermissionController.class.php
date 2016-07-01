@@ -75,28 +75,12 @@ class PermissionController extends Controller
             $this->display('add');
         }
     }
-    public function remove($id){
-        if(IS_POST){
-            //收集数据
-            if ($this->_model->create() === false) {
-                $this->error(get_error($this->_model));
-            }
-            //保存数据
-            if ($this->_model->savePermission() === false) {
-                $this->error(get_error($this->_model));
-            }
-
-            //跳转
-            $this->success('修改成功', U('index'));
-        }else{
-            //获取数据
-            $row = $this->_model->find($id);
-            //传递
-            $this->assign('row',$row);
-            //全部权限列表,json字符串,给ztree使用
-            $this->_before_view();
-            $this->display('add');
+    public function remove($id) {
+        if($this->_model->deletePermission($id) === false){
+            $this->error(get_error($this->_model));
         }
+        //跳转
+        $this->success('删除成功', U('index'));
     }
     private function _before_view() {
         $permissions = $this->_model->getList();

@@ -1,0 +1,564 @@
+[ 2016-07-02T00:23:16+08:00 ] 127.0.0.1 /permission/edit/id/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT * FROM `permission` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `permission` WHERE `status` = 1 ORDER BY lft  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-02T00:23:22+08:00 ] 127.0.0.1 /permission/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: validate F:\www.zyxm\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\www.zyxm\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `parent_id` FROM `permission` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedSets::insert() must be of the type array, string given, called in F:\www.zyxm\admin.zyxm.com\Application\Admin\Model\PermissionModel.class.php on line 42 and defined F:\www.zyxm\admin.zyxm.com\Application\Admin\Logic\NestedSets.class.php 第 183 行.
+NOTIC: [4096] Argument 2 passed to Admin\Logic\MySQLLogic::getRow() must be of the type array, string given, called in F:\www.zyxm\admin.zyxm.com\Application\Admin\Logic\NestedSets.class.php on line 573 and defined F:\www.zyxm\admin.zyxm.com\Application\Admin\Logic\MySQLLogic.class.php 第 181 行.
+SQL: SELECT parent_id, lft, rght, level FROM permission WHERE id = 6 [ RunTime:0.0010s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\MySQLLogic::getRow() must be of the type array, string given, called in F:\www.zyxm\admin.zyxm.com\Application\Admin\Logic\NestedSets.class.php on line 207 and defined F:\www.zyxm\admin.zyxm.com\Application\Admin\Logic\MySQLLogic.class.php 第 181 行.
+SQL: SELECT rght, lft, level FROM permission WHERE id = 6 [ RunTime:0.0000s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\MySQLLogic::query() must be of the type array, string given, called in F:\www.zyxm\admin.zyxm.com\Application\Admin\Logic\NestedSets.class.php on line 225 and defined F:\www.zyxm\admin.zyxm.com\Application\Admin\Logic\MySQLLogic.class.php 第 67 行.
+SQL: UPDATE permission SET rght = rght + 2, lft = IF(lft >= 5, lft + 2, lft) WHERE rght >= 5 [ RunTime:0.0010s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\MySQLLogic::insert() must be of the type array, string given, called in F:\www.zyxm\admin.zyxm.com\Application\Admin\Logic\NestedSets.class.php on line 233 and defined F:\www.zyxm\admin.zyxm.com\Application\Admin\Logic\MySQLLogic.class.php 第 102 行.
+SQL: INSERT INTO permission SET parent_id="6",lft="5",rght="6",level="3" [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-02T00:23:54+08:00 ] 127.0.0.1 /permission/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-02T00:24:05+08:00 ] 127.0.0.1 /permission/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: validate F:\www.zyxm\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\www.zyxm\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `parent_id` FROM `permission` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id F:\www.zyxm\admin.zyxm.com\Application\Admin\Model\PermissionModel.class.php 第 42 行.
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedSets::insert() must be of the type array, string given, called in F:\www.zyxm\admin.zyxm.com\Application\Admin\Model\PermissionModel.class.php on line 42 and defined F:\www.zyxm\admin.zyxm.com\Application\Admin\Logic\NestedSets.class.php 第 183 行.
+NOTIC: [4096] Argument 2 passed to Admin\Logic\MySQLLogic::getRow() must be of the type array, string given, called in F:\www.zyxm\admin.zyxm.com\Application\Admin\Logic\NestedSets.class.php on line 573 and defined F:\www.zyxm\admin.zyxm.com\Application\Admin\Logic\MySQLLogic.class.php 第 181 行.
+SQL: SELECT parent_id, lft, rght, level FROM permission WHERE id = 0 [ RunTime:0.0010s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\MySQLLogic::getOne() must be of the type array, string given, called in F:\www.zyxm\admin.zyxm.com\Application\Admin\Logic\NestedSets.class.php on line 196 and defined F:\www.zyxm\admin.zyxm.com\Application\Admin\Logic\MySQLLogic.class.php 第 222 行.
+SQL: SELECT MAX(rght) FROM permission [ RunTime:0.0000s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\MySQLLogic::query() must be of the type array, string given, called in F:\www.zyxm\admin.zyxm.com\Application\Admin\Logic\NestedSets.class.php on line 225 and defined F:\www.zyxm\admin.zyxm.com\Application\Admin\Logic\MySQLLogic.class.php 第 67 行.
+SQL: UPDATE permission SET rght = rght + 2, lft = IF(lft >= 13, lft + 2, lft) WHERE rght >= 13 [ RunTime:0.0010s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\MySQLLogic::insert() must be of the type array, string given, called in F:\www.zyxm\admin.zyxm.com\Application\Admin\Logic\NestedSets.class.php on line 233 and defined F:\www.zyxm\admin.zyxm.com\Application\Admin\Logic\MySQLLogic.class.php 第 102 行.
+SQL: INSERT INTO permission SET parent_id="0",lft="13",rght="14",level="1" [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-02T00:24:33+08:00 ] 127.0.0.1 /permission/edit/id/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT * FROM `permission` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `permission` WHERE `status` = 1 ORDER BY lft  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-02T00:24:37+08:00 ] 127.0.0.1 /permission/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: validate F:\www.zyxm\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\www.zyxm\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `parent_id` FROM `permission` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\MySQLLogic::getRow() must be of the type array, string given, called in F:\www.zyxm\admin.zyxm.com\Application\Admin\Logic\NestedSets.class.php on line 573 and defined F:\www.zyxm\admin.zyxm.com\Application\Admin\Logic\MySQLLogic.class.php 第 181 行.
+SQL: SELECT parent_id, lft, rght, level FROM permission WHERE id = 6 [ RunTime:0.0010s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\MySQLLogic::getRow() must be of the type array, string given, called in F:\www.zyxm\admin.zyxm.com\Application\Admin\Logic\NestedSets.class.php on line 573 and defined F:\www.zyxm\admin.zyxm.com\Application\Admin\Logic\MySQLLogic.class.php 第 181 行.
+SQL: SELECT parent_id, lft, rght, level FROM permission WHERE id = 7 [ RunTime:0.0000s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\MySQLLogic::query() must be of the type array, string given, called in F:\www.zyxm\admin.zyxm.com\Application\Admin\Logic\NestedSets.class.php on line 470 and defined F:\www.zyxm\admin.zyxm.com\Application\Admin\Logic\MySQLLogic.class.php 第 67 行.
+SQL: 
+				UPDATE permission
+				SET
+					lft = IF(
+						rght <= 7,
+						lft + 4,
+						IF(
+							lft > 7,
+							lft - 6, lft
+						)
+					),
+					level = IF(
+						rght <= 7,
+						level + 0,
+						level
+					),
+					rght = IF(
+						rght <= 7,
+						rght + 4,
+						IF(
+							rght <= 11,
+							rght - 6,
+							rght
+						)
+					),
+					parent_id = IF(
+						id = 6,
+						7,
+						parent_id
+					)
+				WHERE
+					rght > 2
+					AND lft <= 11 [ RunTime:0.0030s ]
+SQL: UPDATE `permission` SET `name`='三星',`path`='adminpermission',`parent_id`='7',`intro`='ddddddddddddd',`sort`='50',`status`='1' WHERE `id` = 6 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-02T00:24:38+08:00 ] 127.0.0.1 /permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT * FROM `permission` WHERE `status` = 1 ORDER BY lft  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-02T00:25:50+08:00 ] 127.0.0.1 /permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT * FROM `permission` WHERE `status` = 1 ORDER BY lft  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-02T00:25:51+08:00 ] 127.0.0.1 /permission/remove/id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SELECT * FROM `permission` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `permission` WHERE `status` = 1 ORDER BY lft  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-02T00:25:56+08:00 ] 127.0.0.1 /permission/remove/id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SELECT * FROM `permission` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `permission` WHERE `status` = 1 ORDER BY lft  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-02T00:26:18+08:00 ] 127.0.0.1 /permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT * FROM `permission` WHERE `status` = 1 ORDER BY lft  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-02T00:26:20+08:00 ] 127.0.0.1 /permission/remove/id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `lft`,`rght` FROM `permission` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `permission` WHERE `lft` >= '5' AND `rght` <= '12'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `role_permission` [ RunTime:0.0050s ]
+SQL: DELETE FROM `role_permission` WHERE `permission_id` IN ('7','6') [ RunTime:0.0010s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\MySQLLogic::getRow() must be of the type array, string given, called in F:\www.zyxm\admin.zyxm.com\Application\Admin\Logic\NestedSets.class.php on line 573 and defined F:\www.zyxm\admin.zyxm.com\Application\Admin\Logic\MySQLLogic.class.php 第 181 行.
+SQL: SELECT parent_id, lft, rght, level FROM permission WHERE id = 7 [ RunTime:0.0000s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\MySQLLogic::query() must be of the type array, string given, called in F:\www.zyxm\admin.zyxm.com\Application\Admin\Logic\NestedSets.class.php on line 259 and defined F:\www.zyxm\admin.zyxm.com\Application\Admin\Logic\MySQLLogic.class.php 第 67 行.
+SQL: DELETE FROM permission WHERE lft >= 5 AND rght <= 12 [ RunTime:0.0000s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\MySQLLogic::query() must be of the type array, string given, called in F:\www.zyxm\admin.zyxm.com\Application\Admin\Logic\NestedSets.class.php on line 279 and defined F:\www.zyxm\admin.zyxm.com\Application\Admin\Logic\MySQLLogic.class.php 第 67 行.
+SQL: UPDATE permission SET lft = IF(lft > 5, lft - 8, lft), rght = rght - 8 WHERE rght > 12 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-02T00:26:21+08:00 ] 127.0.0.1 /permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT * FROM `permission` WHERE `status` = 1 ORDER BY lft  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-02T00:29:04+08:00 ] 127.0.0.1 /Role/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `role` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `role` WHERE `status` = 1 LIMIT 0,20   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-02T00:29:09+08:00 ] 127.0.0.1 /Role/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT * FROM `permission` WHERE `status` = 1 ORDER BY lft  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: row F:\www.zyxm\admin.zyxm.com\Application\Runtime\Cache\Admin\f0c0c154afb6b963a273f1f26383772e.php 第 35 行.
+NOTIC: [8] Undefined variable: row F:\www.zyxm\admin.zyxm.com\Application\Runtime\Cache\Admin\f0c0c154afb6b963a273f1f26383772e.php 第 42 行.
+NOTIC: [8] Undefined variable: row F:\www.zyxm\admin.zyxm.com\Application\Runtime\Cache\Admin\f0c0c154afb6b963a273f1f26383772e.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-02T00:29:31+08:00 ] 127.0.0.1 /role/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: validate F:\www.zyxm\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\www.zyxm\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `role` (`name`,`intro`,`sort`,`status`,`id`) VALUES ('凶啊','啊啊啊啊啊救命','50','1','0') [ RunTime:0.0000s ]
+SQL: INSERT INTO `role_permission` (`role_id`,`permission_id`) VALUES ('1','8') [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-02T00:29:32+08:00 ] 127.0.0.1 /role/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `role` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `role` WHERE `status` = 1 LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-02T00:29:36+08:00 ] 127.0.0.1 /role/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT * FROM `permission` WHERE `status` = 1 ORDER BY lft  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: row F:\www.zyxm\admin.zyxm.com\Application\Runtime\Cache\Admin\f0c0c154afb6b963a273f1f26383772e.php 第 35 行.
+NOTIC: [8] Undefined variable: row F:\www.zyxm\admin.zyxm.com\Application\Runtime\Cache\Admin\f0c0c154afb6b963a273f1f26383772e.php 第 42 行.
+NOTIC: [8] Undefined variable: row F:\www.zyxm\admin.zyxm.com\Application\Runtime\Cache\Admin\f0c0c154afb6b963a273f1f26383772e.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-02T00:29:53+08:00 ] 127.0.0.1 /role/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: validate F:\www.zyxm\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\www.zyxm\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `role` (`name`,`intro`,`sort`,`status`,`id`) VALUES ('急急急','急急如律令','50','1','0') [ RunTime:0.0000s ]
+SQL: INSERT INTO `role_permission` (`role_id`,`permission_id`) VALUES ('2','5'),('2','8') [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-02T00:29:54+08:00 ] 127.0.0.1 /role/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `role` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `role` WHERE `status` = 1 LIMIT 0,20   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-02T00:29:57+08:00 ] 127.0.0.1 /role/edit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT * FROM `role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `permission_id` FROM `role_permission` WHERE `role_id` = 2  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `permission` WHERE `status` = 1 ORDER BY lft  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-02T00:30:00+08:00 ] 127.0.0.1 /role/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: validate F:\www.zyxm\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\www.zyxm\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `role` SET `name`='急急急',`intro`='急急如律令',`sort`='50',`status`='1' WHERE `id` = 2 [ RunTime:0.0010s ]
+SQL: DELETE FROM `role_permission` WHERE `role_id` = 2 [ RunTime:0.0000s ]
+SQL: INSERT INTO `role_permission` (`role_id`,`permission_id`) VALUES ('2','8') [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-02T00:30:01+08:00 ] 127.0.0.1 /role/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `role` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `role` WHERE `status` = 1 LIMIT 0,20   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

@@ -22,21 +22,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PermissionController.class.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PermissionController.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin.zyxm.com/Application/Admin/Controller/PermissionController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.428571">
-              <caret line="61" column="47" selection-start-line="61" selection-start-column="47" selection-end-line="61" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.8181818">
+              <caret line="88" column="5" selection-start-line="88" selection-start-column="5" selection-end-line="88" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PermissionModel.class.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="add.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin.zyxm.com/Application/Admin/View/Role/add.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-46.8">
+              <caret line="134" column="19" selection-start-line="134" selection-start-column="19" selection-end-line="134" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RoleController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin.zyxm.com/Application/Admin/Controller/RoleController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="8.914286">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RoleModel.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin.zyxm.com/Application/Admin/Model/RoleModel.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="51.25714">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PermissionModel.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin.zyxm.com/Application/Admin/Model/PermissionModel.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8636364">
-              <caret line="64" column="0" selection-start-line="48" selection-start-column="3" selection-end-line="64" selection-end-column="0" />
+            <state vertical-scroll-proportion="-10.4">
+              <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -160,8 +190,8 @@
         <option value="$PROJECT_DIR$/admin.zyxm.com/Application/Admin/View/Goods/index.html" />
         <option value="$PROJECT_DIR$/admin.zyxm.com/Application/Admin/View/Permission/brandAdd.html" />
         <option value="$PROJECT_DIR$/admin.zyxm.com/Application/Admin/View/Permission/add.html" />
-        <option value="$PROJECT_DIR$/admin.zyxm.com/Application/Admin/Controller/PermissionController.class.php" />
         <option value="$PROJECT_DIR$/admin.zyxm.com/Application/Admin/Model/PermissionModel.class.php" />
+        <option value="$PROJECT_DIR$/admin.zyxm.com/Application/Admin/Controller/PermissionController.class.php" />
       </list>
     </option>
   </component>
@@ -387,6 +417,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Role" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www.zyxm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www.zyxm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin.zyxm.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Permission" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -517,11 +577,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\www.zyxm\admin.zyxm.com\Application\Admin\Model" />
+      <recent name="F:\www.zyxm\admin.zyxm.com\Application\Admin\Controller" />
+      <recent name="F:\www.zyxm\admin.zyxm.com\Application\Admin\View" />
       <recent name="F:\www.zyxm\admin.zyxm.com\Application\Admin\View\Permission" />
       <recent name="F:\www.zyxm\admin.zyxm.com\Public\ext\uploadify" />
-      <recent name="F:\www.zyxm\admin.zyxm.com\Public\ext" />
-      <recent name="F:\www.zyxm\admin.zyxm.com\Application\Admin\View\Goods" />
-      <recent name="F:\www.zyxm\admin.zyxm.com\Application\Admin\Logic" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\www.zyxm\admin.zyxm.com\Application\Admin\View\GoodsCategory" />
@@ -632,30 +692,11 @@
           <line>26</line>
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin.zyxm.com/Public/Admin/js/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin.zyxm.com/Public/ext/uploadify/uploadify-cancel.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin.zyxm.com/Application/Admin/View/Article/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="55" column="15" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin.zyxm.com/Public/ext/uploadify/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -996,18 +1037,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin.zyxm.com/Application/Admin/Controller/PermissionController.class.php">
+    <entry file="file://$PROJECT_DIR$/admin.zyxm.com/Application/Admin/Model/PermissionModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.428571">
-          <caret line="61" column="47" selection-start-line="61" selection-start-column="47" selection-end-line="61" selection-end-column="47" />
+        <state vertical-scroll-proportion="-10.4">
+          <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin.zyxm.com/Application/Admin/Model/PermissionModel.class.php">
+    <entry file="file://$PROJECT_DIR$/admin.zyxm.com/Application/Admin/View/Role/add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8636364">
-          <caret line="64" column="0" selection-start-line="48" selection-start-column="3" selection-end-line="64" selection-end-column="0" />
+        <state vertical-scroll-proportion="-46.8">
+          <caret line="134" column="19" selection-start-line="134" selection-start-column="19" selection-end-line="134" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin.zyxm.com/Application/Admin/Controller/RoleController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="8.914286">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin.zyxm.com/Application/Admin/Model/RoleModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="51.25714">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin.zyxm.com/Application/Admin/Controller/PermissionController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8181818">
+          <caret line="88" column="5" selection-start-line="88" selection-start-column="5" selection-end-line="88" selection-end-column="5" />
           <folding />
         </state>
       </provider>
