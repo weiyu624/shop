@@ -13,8 +13,8 @@ return [
     'replace'      => false, //存在同名是否覆盖
     'hash'         => true, //是否生成hash编码
     'callback'     => false, //检测文件是否存在回调，如果存在返回文件信息数组
-    'driver'       => '', // 文件上传驱动
-   'driverConfig' => array(
+  // 'driver'       => 'qiniu', // 文件上传驱动
+  ' driverConfig' => array(
         'SecretKey' => '9cxiI2yx7gXvxV6cpVG6W0UaFG4zFljrJYgV2F-d', //SK
         'accessKey'  => 'OgLrYqHreIe7rHYajwX7ItmJ4tO5aOwaYRb-SD8M', //AK
         'domain'     => 'o9hoik6dt.bkt.clouddn.com', //域名

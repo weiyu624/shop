@@ -83,11 +83,14 @@ class Verify {
      * @return bool 用户验证码是否正确
      */
     public function check($code, $id = '') {
+
         $key = $this->authcode($this->seKey).$id;
         // 验证码不能为空
         $secode = session($key);
+
         if(empty($code) || empty($secode)) {
             return false;
+
         }
         // session 过期
         if(NOW_TIME - $secode['verify_time'] > $this->expire) {
@@ -174,7 +177,7 @@ class Verify {
         $secode['verify_code'] = $code; // 把校验码保存到session
         $secode['verify_time'] = NOW_TIME;  // 验证码创建时间
         session($key.$id, $secode);
-                        
+
         header('Cache-Control: private, max-age=0, no-store, no-cache, must-revalidate');
         header('Cache-Control: post-check=0, pre-check=0', false);		
         header('Pragma: no-cache');
@@ -183,6 +186,7 @@ class Verify {
         // 输出图像
         imagepng($this->_image);
         imagedestroy($this->_image);
+
     }
 
     /** 

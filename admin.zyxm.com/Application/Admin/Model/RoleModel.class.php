@@ -9,6 +9,9 @@ class RoleModel extends \Think\Model{
      * @param array $cond
      * @return type
      */
+    public function getList() {
+        return $this->where(['status' => 1])->select();
+    }
     public function getPageResult(array $cond=[]) {
         //查询条件
         $cond = array_merge(['status'=>1],$cond);

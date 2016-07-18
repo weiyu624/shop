@@ -41,3 +41,43 @@ function arr2select(array $data, $name_field = 'name', $value_field = 'id', $nam
     $html .= '</select>';
     return $html;
 }
+//加盐加密
+function salt_encrypt($password,$salt){
+    return md5(md5($password,$salt));
+}
+
+//获取和设置用户session
+function login($data=null){
+
+    if(is_null($data)){
+        return session('USERINFO');
+    }else{
+        session('USERINFO',$data);
+
+    }
+
+}
+//获取和设置用户权限session
+function permission_pathes($data=null){
+    if(is_null($data)){
+        $pathes = session('PERMISSION_PATHES');
+        if(!is_array($pathes)){
+            $pathes = [];
+        }
+        return $pathes;
+    }else{
+        session('PERMISSION_PATHES',$data);
+    }
+}
+//获取和设置用户权限ID session
+function permission_pids($data=null){
+    if(is_null($data)){
+        $pids = session('PERMISSION_PIDS');
+        if(!is_array($pids)){
+            $pids = [];
+        }
+        return $pids;
+    }else{
+        session('PERMISSION_PIDS',$data);
+    }
+}

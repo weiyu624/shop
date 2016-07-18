@@ -79,4 +79,5 @@ class RoleController extends \Think\Controller {
         $this->assign('permissions', json_encode($permissions));
     }
 
+
 }
